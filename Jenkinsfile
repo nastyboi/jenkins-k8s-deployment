@@ -9,9 +9,9 @@ pipeline {
 
   stages {
 
-    stage('Checkout Source') {
+    stage('Git Checkout') {
       steps {
-        git 'https://github.com/nastyboi/jenkins-k8s-deployment.git'
+        git branch: 'main', url: 'https://github.com/nastyboi/jenkins-k8s-deployment.git'
       }
     }
 
