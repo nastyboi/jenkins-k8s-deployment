@@ -11,7 +11,7 @@ pipeline {
 
     stage('Checkout Source') {
       steps {
-        git 'https://github.com/nastyboi/jenkins-kubernetes-deployment.git'
+        git 'https://github.com/nastyboi/jenkins-k8s-deployment.git'
       }
     }
 
